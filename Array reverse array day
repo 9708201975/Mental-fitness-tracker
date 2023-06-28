@@ -1,12 +1,13 @@
-class Solution {
-public:
-    void rotate(vector<int>& nums, int k) {
-        int n=nums.size();
-        k=k%n;
-        reverse(nums.begin(),nums.begin()+n-k);
-        reverse(nums.begin()+n-k,nums.end());
-        reverse(nums.begin(),nums.end());
 
-        
-    }
-};
+#include<stdio.h>
+#define PI=3.14f
+int main() {
+float r;
+printf("enter the radius of circle\n");
+scanf("%d",&r);
+float area=PI*r*r;
+printf("area is :%f\n",area);
+float per=2*PI*r;
+prntf("perameter is:%f",per);
+return 0;
+}
